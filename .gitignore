@@ -1,0 +1,10 @@
+data/
+checkpoints/
+weights/
+*.pt
+*.pth
+__pycache__/
+.idea/
+final_deploy/uploads/
+final_deploy/demo_wardrobe/images/
+sam_test_grid/

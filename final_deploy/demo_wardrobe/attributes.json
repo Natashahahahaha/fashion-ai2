@@ -1,0 +1,762 @@
+{
+  "203764824": {
+    "title": "203764824",
+    "category": "shoes",
+    "garment_type": "shoes",
+    "colors": [
+      "beige"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "pointed toe",
+    "style_tags": [
+      "pointed-toe",
+      "heeled"
+    ],
+    "formality": "casual",
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "occasion": [
+      "casual outings",
+      "workplace",
+      "social events"
+    ],
+    "confidence": 0.9
+  },
+  "111095986": {
+    "title": "111095986",
+    "category": "shoes",
+    "garment_type": "shoes",
+    "colors": [
+      "pink"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "high-heeled",
+    "style_tags": [
+      "fashionable",
+      "elegant",
+      "feminine"
+    ],
+    "formality": "formal",
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "occasion": [
+      "social events",
+      "weddings",
+      "dressy outings"
+    ],
+    "confidence": 0.9
+  },
+  "203968549": {
+    "title": "203968549",
+    "category": "shoes",
+    "garment_type": "shoes",
+    "colors": [
+      "yellow"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "visible silhouette/cut",
+    "style_tags": [
+      "fringe",
+      "sandal"
+    ],
+    "formality": "casual",
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "occasion": [
+      "casual outings",
+      "beach",
+      "poolside"
+    ],
+    "confidence": 0.9
+  },
+  "171564173": {
+    "title": "171564173",
+    "category": "shoes",
+    "garment_type": "shoes",
+    "colors": [
+      "red"
+    ],
+    "pattern": "patterned",
+    "material": "unknown",
+    "fit": "open-toe",
+    "style_tags": [
+      "ethnic",
+      "summer",
+      "vacation"
+    ],
+    "formality": "casual",
+    "season": [
+      "summer"
+    ],
+    "occasion": [
+      "beach",
+      "poolside",
+      "resort"
+    ],
+    "confidence": 0
+  },
+  "16900641": {
+    "title": "16900641",
+    "category": "shoes",
+    "garment_type": "shoes",
+    "colors": [
+      "blue"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "high-heeled ankle boot",
+    "style_tags": [
+      "fashionable",
+      "trendy",
+      "feminine"
+    ],
+    "formality": "casual",
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "occasion": [
+      "casual outings",
+      "social events"
+    ],
+    "confidence": 0
+  },
+  "209390450": {
+    "title": "209390450",
+    "category": "shoes",
+    "garment_type": "shoes",
+    "colors": [
+      "blue"
+    ],
+    "pattern": "floral",
+    "material": "unknown",
+    "fit": "high heel",
+    "style_tags": [
+      "fashionable",
+      "female",
+      "elegant"
+    ],
+    "formality": "formal",
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "occasion": [
+      "wedding",
+      "prom",
+      "dressy event"
+    ],
+    "confidence": 0
+  },
+  "173788653": {
+    "title": "173788653",
+    "category": "jewellery",
+    "garment_type": "jewellery",
+    "colors": [
+      "black"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "unknown",
+    "style_tags": [
+      "minimalist",
+      "trendy"
+    ],
+    "formality": "casual",
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "occasion": [
+      "casual outings",
+      "fashion accessory"
+    ],
+    "confidence": 0.9
+  },
+  "67909231": {
+    "title": "67909231",
+    "category": "jewellery",
+    "garment_type": "jewellery",
+    "colors": [
+      "silver"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "unknown",
+    "style_tags": [
+      "skull design",
+      "crystal embellishments"
+    ],
+    "formality": "casual",
+    "season": [
+      "winter"
+    ],
+    "occasion": [
+      "casual",
+      "fashion accessory"
+    ],
+    "confidence": 0
+  },
+  "124471485": {
+    "title": "124471485",
+    "category": "jewellery",
+    "garment_type": "jewellery",
+    "colors": [
+      "gold"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "ring",
+    "style_tags": [
+      "fashionable",
+      "luxury",
+      "accessory"
+    ],
+    "formality": "casual",
+    "season": [
+      "autumn"
+    ],
+    "occasion": [
+      "gift",
+      "engagement",
+      "anniversary"
+    ],
+    "confidence": 0
+  },
+  "181492893": {
+    "title": "181492893",
+    "category": "jewellery",
+    "garment_type": "specific visible item type or unknown",
+    "colors": [
+      "green"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "unknown",
+    "style_tags": [
+      "jewellery",
+      "earrings",
+      "gemstone"
+    ],
+    "formality": "casual",
+    "season": [
+      "winter"
+    ],
+    "occasion": [
+      "casual",
+      "fashion accessory"
+    ],
+    "confidence": 0
+  },
+  "130370646": {
+    "title": "130370646",
+    "category": "jewellery",
+    "garment_type": "jewellery",
+    "colors": [
+      "black"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "round",
+    "style_tags": [
+      "engagement ring",
+      "diamond",
+      "silver"
+    ],
+    "formality": "formal",
+    "season": [
+      "winter"
+    ],
+    "occasion": [
+      "wedding",
+      "anniversary"
+    ],
+    "confidence": 0
+  },
+  "56175158": {
+    "title": "56175158",
+    "category": "jewellery",
+    "garment_type": "specific visible item type or unknown",
+    "colors": [
+      "gold"
+    ],
+    "pattern": "unknown",
+    "material": "unknown",
+    "fit": "unknown",
+    "style_tags": [
+      "leaf design",
+      "trendy"
+    ],
+    "formality": "casual",
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "occasion": [
+      "casual outings",
+      "fashion accessory"
+    ],
+    "confidence": 0.9
+  },
+  "174378557": {
+    "title": "174378557",
+    "category": "bags",
+    "garment_type": "specific visible item type or unknown",
+    "colors": [
+      "pink"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "unknown",
+    "style_tags": [
+      "casual"
+    ],
+    "formality": "casual",
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "occasion": [
+      "casual outing",
+      "beach day"
+    ],
+    "confidence": 0.9
+  },
+  "157044011": {
+    "title": "157044011",
+    "category": "bags",
+    "garment_type": "backpack",
+    "colors": [
+      "black"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "unknown",
+    "style_tags": [
+      "casual",
+      "trendy",
+      "vintage"
+    ],
+    "formality": "casual",
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "occasion": [
+      "everyday",
+      "school",
+      "travel"
+    ],
+    "confidence": 0.9
+  },
+  "168616321": {
+    "title": "168616321",
+    "category": "bags",
+    "garment_type": "specific visible item type or unknown",
+    "colors": [
+      "gray"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "unknown",
+    "style_tags": [
+      "casual",
+      "fashionable",
+      "trendy"
+    ],
+    "formality": "casual",
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "occasion": [
+      "everyday",
+      "outdoor",
+      "social"
+    ],
+    "confidence": 0.9
+  },
+  "134181299": {
+    "title": "134181299",
+    "category": "bags",
+    "garment_type": "specific visible item type or unknown",
+    "colors": [
+      "blue"
+    ],
+    "pattern": "unknown",
+    "material": "unknown",
+    "fit": "unknown",
+    "style_tags": [
+      "fashionable",
+      "trendy",
+      "vintage"
+    ],
+    "formality": "casual",
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "occasion": [
+      "social events",
+      "dress up"
+    ],
+    "confidence": 0.9
+  },
+  "149835465": {
+    "title": "149835465",
+    "category": "bags",
+    "garment_type": "specific visible item type or unknown",
+    "colors": [
+      "beige"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "unknown",
+    "style_tags": [
+      "casual",
+      "fashionable",
+      "trendy"
+    ],
+    "formality": "casual",
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "occasion": [
+      "everyday",
+      "work",
+      "social"
+    ],
+    "confidence": 0.9
+  },
+  "117265551": {
+    "title": "117265551",
+    "category": "bags",
+    "garment_type": "specific visible item type or unknown",
+    "colors": [
+      "black"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "unknown",
+    "style_tags": [
+      "casual",
+      "fashionable",
+      "trendy"
+    ],
+    "formality": "casual",
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "occasion": [
+      "casual outings",
+      "social events"
+    ],
+    "confidence": 0.9
+  },
+  "210970814": {
+    "title": "210970814",
+    "category": "tops",
+    "garment_type": "specific visible item type or unknown",
+    "colors": [
+      "white"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "loose",
+    "style_tags": [
+      "casual",
+      "tank top"
+    ],
+    "formality": "casual",
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "occasion": [
+      "casual outings",
+      "fitness activities"
+    ],
+    "confidence": 0.9
+  },
+  "195818894": {
+    "title": "195818894",
+    "category": "tops",
+    "garment_type": "specific visible item type or unknown",
+    "colors": [
+      "blue"
+    ],
+    "pattern": "unknown",
+    "material": "unknown",
+    "fit": "unknown",
+    "style_tags": [
+      "vintage",
+      "lacy"
+    ],
+    "formality": "unknown",
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "occasion": [
+      "casual",
+      "social event"
+    ],
+    "confidence": 0.9
+  },
+  "193172889": {
+    "title": "193172889",
+    "category": "tops",
+    "garment_type": "specific visible item type or unknown",
+    "colors": [
+      "white"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "loose",
+    "style_tags": [
+      "button-up",
+      "collared"
+    ],
+    "formality": "casual",
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "occasion": [
+      "casual outings",
+      "workplace"
+    ],
+    "confidence": 0.9
+  },
+  "98717100": {
+    "title": "98717100",
+    "category": "tops",
+    "garment_type": "specific visible item type or unknown",
+    "colors": [
+      "blue"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "loose",
+    "style_tags": [
+      "casual",
+      "button-up"
+    ],
+    "formality": "casual",
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "occasion": [
+      "casual outings",
+      "workplace"
+    ],
+    "confidence": 0.9
+  },
+  "193810471": {
+    "title": "193810471",
+    "category": "tops",
+    "garment_type": "sweater",
+    "colors": [
+      "beige"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "loose",
+    "style_tags": [
+      "knit",
+      "textured"
+    ],
+    "formality": "casual",
+    "season": [
+      "winter"
+    ],
+    "occasion": [
+      "casual"
+    ],
+    "confidence": 0
+  },
+  "191676086": {
+    "title": "191676086",
+    "category": "tops",
+    "garment_type": "sweater",
+    "colors": [
+      "purple"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "loose",
+    "style_tags": [
+      "vintage",
+      "retro"
+    ],
+    "formality": "casual",
+    "season": [
+      "winter"
+    ],
+    "occasion": [
+      "casual"
+    ],
+    "confidence": 0
+  },
+  "166834702": {
+    "title": "166834702",
+    "category": "bottoms",
+    "garment_type": "specific visible item type or unknown",
+    "colors": [
+      "black"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "unknown",
+    "style_tags": [
+      "leggings"
+    ],
+    "formality": "casual",
+    "season": [
+      "winter"
+    ],
+    "occasion": [
+      "casual"
+    ],
+    "confidence": 0.9
+  },
+  "148980620": {
+    "title": "148980620",
+    "category": "bottoms",
+    "garment_type": "specific visible item type or unknown",
+    "colors": [
+      "gray"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "slim fit",
+    "style_tags": [
+      "business casual"
+    ],
+    "formality": "smart-casual",
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "occasion": [
+      "work",
+      "social events",
+      "casual outings"
+    ],
+    "confidence": 0.9
+  },
+  "199787757": {
+    "title": "199787757",
+    "category": "bottoms",
+    "garment_type": "specific visible item type or unknown",
+    "colors": [
+      "black"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "loose-fitting",
+    "style_tags": [
+      "high-waisted",
+      "flared"
+    ],
+    "formality": "casual",
+    "season": [
+      "autumn"
+    ],
+    "occasion": [
+      "casual outings",
+      "social events"
+    ],
+    "confidence": 0.9
+  },
+  "69968592": {
+    "title": "69968592",
+    "category": "bottoms",
+    "garment_type": "pants",
+    "colors": [
+      "pink"
+    ],
+    "pattern": "checkered",
+    "material": "unknown",
+    "fit": "loose",
+    "style_tags": [
+      "plaid",
+      "checkered"
+    ],
+    "formality": "casual",
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "occasion": [
+      "casual outings",
+      "social events"
+    ],
+    "confidence": 0.9
+  },
+  "192919545": {
+    "title": "192919545",
+    "category": "bottoms",
+    "garment_type": "skirt",
+    "colors": [
+      "beige"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "A-line",
+    "style_tags": [
+      "vintage",
+      "floral embroidery"
+    ],
+    "formality": "casual",
+    "season": [
+      "spring",
+      "summer"
+    ],
+    "occasion": [
+      "casual outings",
+      "social events"
+    ],
+    "confidence": 0.9
+  },
+  "145585684": {
+    "title": "145585684",
+    "category": "bottoms",
+    "garment_type": "bottoms",
+    "colors": [
+      "blue"
+    ],
+    "pattern": "solid",
+    "material": "unknown",
+    "fit": "relaxed",
+    "style_tags": [
+      "denim",
+      "classic"
+    ],
+    "formality": "casual",
+    "season": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "occasion": [
+      "casual outings",
+      "work",
+      "social events"
+    ],
+    "confidence": 0.9
+  }
+}

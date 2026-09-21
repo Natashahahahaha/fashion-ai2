@@ -1,0 +1,78 @@
+from __future__ import annotations
+import argparse, os, torch, torch.nn as nn
+from torch.utils.data import Dataset, DataLoader
+from dataset import load_outfits, load_item_categories, build_pairs
+from embed import load_embedding
+from model import OutfitCompatibilityNet
+try:
+    from sklearn.metrics import roc_auc_score
+except ImportError:
+    roc_auc_score = None
+class PairDataset(Dataset):
+    def __init__(self, pairs, embeddings_dir):
+        self.pairs = pairs
+        self.embeddings_dir = embeddings_dir
+    def __len__(self):
+        return len(self.pairs)
+    def __getitem__(self, idx):
+        item_a, item_b, label = self.pairs[idx]
+        return load_embedding(os.path.join(self.embeddings_dir, f"{item_a}.pt")),
+               load_embedding(os.path.join(self.embeddings_dir, f"{item_b}.pt")),
+               torch.tensor(label, dtype=torch.float32)
+def run_epoch(model, loader, optimizer=None, device="cpu"):
+    is_train = optimizer is not None
+    model.train() if is_train else model.eval()
+    criterion = nn.BCEWithLogitsLoss()
+    total_loss, all_labels, all_scores = 0.0, [], []
+    context = torch.enable_grad() if is_train else torch.no_grad()
+    with context:
+        for emb_a, emb_b, labels in loader:
+            emb_a, emb_b, labels = emb_a.to(device), emb_b.to(device), labels.to(device)
+            logits = model(emb_a, emb_b)
+            loss = criterion(logits, labels)
+            if is_train:
+                optimizer.zero_grad()
+                loss.backward()
+                optimizer.step()
+            total_loss += loss.item() * len(labels)
+            all_labels.extend(labels.detach().cpu().tolist())
+            all_scores.extend(torch.sigmoid(logits).detach().cpu().tolist())
+    avg_loss = total_loss / len(loader.dataset)
+    auc = roc_auc_score(all_labels, all_scores) if roc_auc_score and len(set(all_labels)) > 1 else float("nan")
+    return avg_loss, auc
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--train-json", required=True)
+    parser.add_argument("--valid-json", required=True)
+    parser.add_argument("--metadata", default=None)
+    parser.add_argument("--embeddings-dir", required=True)
+    parser.add_argument("--out", default="checkpoints/compatibility_net.pt")
+    parser.add_argument("--epochs", type=int, default=15)
+    parser.add_argument("--batch-size", type=int, default=128)
+    parser.add_argument("--lr", type=float, default=1e-3)
+    parser.add_argument("--device", default="cpu")
+    args = parser.parse_args()
+    item_categories = load_item_categories(args.metadata) if args.metadata else None
+    train_outfits = load_outfits(args.train_json)
+    valid_outfits = load_outfits(args.valid_json)
+    print(f"[train] {len(train_outfits)} train outfits, {len(valid_outfits)} valid outfits")
+    train_pairs = build_pairs(train_outfits, item_categories=item_categories)
+    valid_pairs = build_pairs(valid_outfits, item_categories=item_categories)
+    print(f"[train] {len(train_pairs)} train pairs, {len(valid_pairs)} valid pairs")
+    train_loader = DataLoader(PairDataset(train_pairs, args.embeddings_dir), batch_size=args.batch_size, shuffle=True)
+    valid_loader = DataLoader(PairDataset(valid_pairs, args.embeddings_dir), batch_size=args.batch_size)
+    model = OutfitCompatibilityNet().to(args.device)
+    optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr)
+    best_auc = -1.0
+    os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
+    for epoch in range(1, args.epochs + 1):
+        train_loss, train_auc = run_epoch(model, train_loader, optimizer, args.device)
+        val_loss, val_auc = run_epoch(model, valid_loader, None, args.device)
+        print(f"[epoch {epoch}] train_loss={train_loss:.4f} train_auc={train_auc:.4f} val_loss={val_loss:.4f} val_auc={val_auc:.4f}")
+        if val_auc > best_auc:
+            best_auc = val_auc
+            torch.save(model.state_dict(), args.out)
+            print(f"[epoch {epoch}] new best val_auc={val_auc:.4f} - {args.out}")
+    print(f"[train] done. best val_auc={best_auc:.4f}")
+if __name__ == "__main__":
+    main()
