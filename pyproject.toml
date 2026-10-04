@@ -1,0 +1,32 @@
+[project]
+name = "fashion-ai"
+version = "1.0.0"
+description = "Wardrobe digitisation (YOLO-World + CLIP) and outfit recommendation"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "tests"]
+addopts = "-q"
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::FutureWarning",
+]
+
+[tool.ruff]
+line-length = 130
+target-version = "py310"
+extend-exclude = ["experiments", ".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501", "B008"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["src", "conftest"]
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true
+exclude = ["experiments/", "\\.venv/"]
+warn_unused_ignores = false

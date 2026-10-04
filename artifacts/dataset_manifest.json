@@ -1,0 +1,118 @@
+{
+  "name": "Maryland Polyvore (Han et al. 2017) + Marqo/polyvore images",
+  "dataset_key": "maryland-polyvore",
+  "source": "https://github.com/xthan/polyvore-dataset ; https://huggingface.co/datasets/Marqo/polyvore",
+  "license": "Apache-2.0 (both repositories). Product images originate from Polyvore.com and may be third-party copyright: research use, no redistribution.",
+  "citation": "Han, Wu, Jiang, Davis. Learning Fashion Compatibility with Bidirectional LSTMs. ACM Multimedia 2017.",
+  "version": "github@ba8aa71b6589 + hf@8c782ee447fa",
+  "preprocessing_version": "maryland-polyvore/v1",
+  "downloaded_at": "2026-10-04T01:36:56+00:00",
+  "files": [
+    {
+      "url": "https://raw.githubusercontent.com/xthan/polyvore-dataset/ba8aa71b6589e8920d172a8b5df84746be724d00/polyvore.tar.gz",
+      "path": "polyvore.tar.gz",
+      "size": 8412072,
+      "sha256": "37c36efc67cabdaa58f2d73cbc1c5143d87f9918ff3d4da20e271e40c89e902b"
+    },
+    {
+      "url": "https://huggingface.co/datasets/Marqo/polyvore/resolve/8c782ee447faf2d2a0402ac883cf07d3b3f43e1c/data/data-00000-of-00006.parquet",
+      "path": "images_parquet/data-00000-of-00006.parquet",
+      "size": 428492230,
+      "sha256": "c5f9570cecd73ad8050609627f121bc69801905931d227775ae10370c43b6f3b"
+    },
+    {
+      "url": "https://huggingface.co/datasets/Marqo/polyvore/resolve/8c782ee447faf2d2a0402ac883cf07d3b3f43e1c/data/data-00001-of-00006.parquet",
+      "path": "images_parquet/data-00001-of-00006.parquet",
+      "size": 421082894,
+      "sha256": "4d9ecaa627db670178f3d8d372cc1b4eb64442c301c935eda0da85aa98809df6"
+    },
+    {
+      "url": "https://huggingface.co/datasets/Marqo/polyvore/resolve/8c782ee447faf2d2a0402ac883cf07d3b3f43e1c/data/data-00002-of-00006.parquet",
+      "path": "images_parquet/data-00002-of-00006.parquet",
+      "size": 415568757,
+      "sha256": "fce678b1acbd90fe485695817b45f4f295420c663a8fdab992aa1e3f9a1f011e"
+    },
+    {
+      "url": "https://huggingface.co/datasets/Marqo/polyvore/resolve/8c782ee447faf2d2a0402ac883cf07d3b3f43e1c/data/data-00003-of-00006.parquet",
+      "path": "images_parquet/data-00003-of-00006.parquet",
+      "size": 415941848,
+      "sha256": "946ba30f80a1fe755a8e43697766cf2cc3d7f4267a9d0be5345d3f2c5a2495b8"
+    },
+    {
+      "url": "https://huggingface.co/datasets/Marqo/polyvore/resolve/8c782ee447faf2d2a0402ac883cf07d3b3f43e1c/data/data-00004-of-00006.parquet",
+      "path": "images_parquet/data-00004-of-00006.parquet",
+      "size": 421843702,
+      "sha256": "55977c926d791323a225e81ab5cefb0d43d24c2bc80861883adcd341fbc82a8b"
+    },
+    {
+      "url": "https://huggingface.co/datasets/Marqo/polyvore/resolve/8c782ee447faf2d2a0402ac883cf07d3b3f43e1c/data/data-00005-of-00006.parquet",
+      "path": "images_parquet/data-00005-of-00006.parquet",
+      "size": 409375762,
+      "sha256": "f612817cb6a26d5b438d354de805a77676652666e55989511735d07bf1b2b9c8"
+    }
+  ],
+  "extracted_files": 5,
+  "preparation": {
+    "fashion_items_with_images": 73744,
+    "non_fashion_items_dropped": 20352,
+    "non_fashion_categories_dropped": {
+      "Tech Accessories": 1693,
+      "Clothing": 1146,
+      "Lipstick": 962,
+      "Fragrance": 843,
+      "Eyeshadow": 759,
+      "Nail Polish": 687,
+      "Floral Decor": 580,
+      "Home Decor": 565,
+      "Mascara": 369,
+      "Beauty Products": 343,
+      "Eyeliner": 342,
+      "Accessories": 330,
+      "Makeup": 309,
+      "Stationery": 289,
+      "Office Accessories": 286,
+      "Lip Gloss": 278,
+      "Eye Makeup": 276,
+      "Throw Pillows": 275,
+      "Accent Tables": 267,
+      "Hair Styling Tools": 248,
+      "Makeup Brushes": 247,
+      "Socks": 220,
+      "Holiday Decorations": 213,
+      "Drinkware": 210,
+      "Bras": 206,
+      "Ceiling Lights": 205,
+      "Rugs": 186,
+      "Lip Makeup": 185,
+      "Blush": 180,
+      "Candles & Candleholders": 163,
+      "Font": 158,
+      "Nail Treatments": 155,
+      "Sofas": 154,
+      "Accent Chairs": 153,
+      "Lip Treatments": 151,
+      "Food & Drink": 150,
+      "Foundation": 149,
+      "Electronics": 148,
+      "Face Powder": 142,
+      "Tights": 141
+    },
+    "splits": {
+      "train": {
+        "raw_outfits": 17316,
+        "raw_items": 114806,
+        "retained_outfits": 14704
+      },
+      "valid": {
+        "raw_outfits": 1497,
+        "raw_items": 9070,
+        "retained_outfits": 1238
+      },
+      "test": {
+        "raw_outfits": 3076,
+        "raw_items": 18604,
+        "retained_outfits": 2594
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "fitted_at": "2026-10-04T03:32:11+00:00",
+  "fitted_on": "validation split (pairs and outfits); metrics below are on the untouched test split",
+  "dataset": {
+    "name": "polyvore-format",
+    "format": "polyvore_outfits",
+    "path": "data/datasets/maryland-polyvore/prepared",
+    "users_or_accounts": "not available in this format"
+  },
+  "negative_strategy": "pairs: observed vs constructed (random + hard); outfits: real vs category-preserving random swaps",
+  "variants": {
+    "with_learned": {
+      "features": [
+        "learned_logit",
+        "clip_cos",
+        "style_sim",
+        "category"
+      ],
+      "dropped_features": {
+        "colour": "negative fitted weight (-0.100) on validation pairs: the signal is contradicted by real outfits, so it is not used for ranking"
+      },
+      "coef": [
+        0.9241315071782209,
+        0.011366024804946155,
+        0.10942569098176907,
+        0.18254802080497867
+      ],
+      "intercept": -0.003061004453453306,
+      "mean": [
+        -0.5065411098080915,
+        0.707758902883864,
+        0.7980959892225519,
+        0.5963395832297392
+      ],
+      "scale": [
+        0.8967343281019329,
+        0.07595622446731397,
+        0.1321268856113267,
+        0.33630261416483226
+      ],
+      "impute": [
+        -0.5065411098080915,
+        0.707758902883864,
+        0.7980959892225519,
+        0.5963395832297392
+      ],
+      "outfit_threshold": 0.5169433445131573,
+      "metrics": {
+        "pair_test_roc_auc": 0.7274866658093033,
+        "pair_test_roc_auc_hard_negatives": 0.715634053899828,
+        "pair_valid_roc_auc": 0.7180283864171995,
+        "outfit_threshold_chosen_on": "validation, max(TPR - FPR) real vs category-preserving fake outfits",
+        "outfit_valid_tpr": 0.7075928917609047,
+        "outfit_valid_fpr": 0.17932148626817448,
+        "outfit_test_tpr": 0.7139552814186585,
+        "outfit_test_fpr": 0.1592135697764071,
+        "outfit_test_roc_auc": 0.8615299882475959,
+        "n_valid_outfits": 1238,
+        "n_test_outfits": 2594
+      }
+    },
+    "baseline": {
+      "features": [
+        "clip_cos",
+        "style_sim",
+        "category"
+      ],
+      "dropped_features": {
+        "colour": "negative fitted weight (-0.219) on validation pairs: the signal is contradicted by real outfits, so it is not used for ranking"
+      },
+      "coef": [
+        0.15727922885235937,
+        0.26065295083936146,
+        0.13287479848801956
+      ],
+      "intercept": -0.00492963380203524,
+      "mean": [
+        0.707758902883864,
+        0.7980959892225519,
+        0.5963395832297392
+      ],
+      "scale": [
+        0.07595622446731397,
+        0.1321268856113267,
+        0.33630261416483226
+      ],
+      "impute": [
+        0.707758902883864,
+        0.7980959892225519,
+        0.5963395832297392
+      ],
+      "outfit_threshold": 0.5163819548609502,
+      "metrics": {
+        "pair_test_roc_auc": 0.6040384024434986,
+        "pair_test_roc_auc_hard_negatives": 0.5942193247906747,
+        "pair_valid_roc_auc": 0.596382687132172,
+        "outfit_threshold_chosen_on": "validation, max(TPR - FPR) real vs category-preserving fake outfits",
+        "outfit_valid_tpr": 0.598546042003231,
+        "outfit_valid_fpr": 0.33279483037156704,
+        "outfit_test_tpr": 0.594834232845027,
+        "outfit_test_fpr": 0.34117193523515804,
+        "outfit_test_roc_auc": 0.6635899582037665,
+        "n_valid_outfits": 1238,
+        "n_test_outfits": 2594
+      }
+    }
+  },
+  "reference": {
+    "learned_alone_test_roc_auc": 0.7246914366280686,
+    "clip_alone_test_roc_auc": 0.5801753957288043
+  }
+}

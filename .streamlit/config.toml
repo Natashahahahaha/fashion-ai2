@@ -1,0 +1,10 @@
+[server]
+# Hard transport cap (MB). The uploader enforces MAX_UPLOAD_MB (default 15) per widget.
+maxUploadSize = 200
+
+[client]
+# Unexpected errors show the exception type only; tracebacks go to the terminal.
+showErrorDetails = "type"
+
+[browser]
+gatherUsageStats = false

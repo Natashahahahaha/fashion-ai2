@@ -1,10 +1,45 @@
+# Runtime data (wardrobe DB, images, embeddings, uploads, datasets) — created on demand
 data/
+# Model weights (downloaded on first run / produced by training)
 checkpoints/
 weights/
 *.pt
 *.pth
+*.safetensors
+# Folders Ultralytics may create in the working directory
+runs/
+
+# Local configuration (copy .env.example to .env)
+.env
+
+# Temporary / OS files
+*.tmp
+*.tmp.*
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python / tooling
+.venv/
+venv/
 __pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .idea/
-final_deploy/uploads/
-final_deploy/demo_wardrobe/images/
-sam_test_grid/
+.vscode/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+
+# Legacy app runtime folders
+experiments/legacy_flask_app/uploads/
+experiments/legacy_flask_app/demo_wardrobe/images/
+experiments/legacy_flask_app/demo_wardrobe/embeddings/
+
+# Additional virtualenvs (e.g. a CUDA one)
+.venv*/
