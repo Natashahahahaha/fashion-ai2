@@ -235,6 +235,7 @@ scripts/           download_dataset.py  audit_dataset.py  embed_dataset.py  trai
                    fit_ranker.py  reproduce_results.py  evaluate_compatibility.py
                    demo_wardrobe.py  ingest.py  smoke_test.py
 artifacts/         dataset manifest (pinned sources, SHA-256) and dataset audit
+LICENSE            MIT
 docs/              project report, reproducibility guide, changelog
 tests/             unit, integration, UI and opt-in real-model tests
 experiments/       archived earlier prototypes, not used by the app
@@ -256,8 +257,9 @@ experiments/       archived earlier prototypes, not used by the app
 
 ## 11. Licence and data provenance
 
-* No licence file is included yet, so default copyright applies to the code.
-  Add a licence before redistributing.
+* The code is released under the [MIT License](LICENSE). The licence covers
+  this repository's code and documentation only, not the dataset images or
+  the third-party model weights.
 * Model weights are downloaded from Ultralytics and Hugging Face under their
   own licences and are not committed.
 * Dataset: Maryland Polyvore (Han, Wu, Jiang, Davis, *Learning Fashion

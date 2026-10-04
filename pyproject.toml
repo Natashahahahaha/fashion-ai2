@@ -3,6 +3,7 @@ name = "fashion-ai"
 version = "1.0.0"
 description = "Wardrobe digitisation (YOLO-World + CLIP) and outfit recommendation"
 requires-python = ">=3.10"
+license = { text = "MIT" }
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

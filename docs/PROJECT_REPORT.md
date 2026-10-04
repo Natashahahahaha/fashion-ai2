@@ -761,8 +761,9 @@ colour from ranking; an outfit funnel; browser QA.
   personal wardrobes; above 200,000 combinations per template, pools are pruned.
 * One training run, one seed; validation reused for several choices.
 * Verified only on Windows 11 with one NVIDIA GPU and a CPU-only setup.
-* The repository has no licence file yet; dataset images are research-use only
-  and are not redistributed.
+* Dataset images are research-use only and are not redistributed. The code is
+  MIT-licensed (`LICENSE`); the licence does not extend to the dataset or the
+  third-party model weights.
 
 ## 32. Reproducibility
 
